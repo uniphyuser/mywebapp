@@ -1,13 +1,20 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%> 
 <!DOCTYPE html> 
 <html> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
-<title> Java Simple Login Web App <%= request.getLocalAddr(); %></title> </head> 
+<title> Java Simple Login Web App </title> </head> 
 
 
 <body bgcolor="#aaaaaa"> 
 
 <form method="post" action="login.jsp"> 
 <center> 
+	<h3> Server Side IP Address </h3><br>
+<%@page import="java.net.InetAddress;" %>
+<%String ip = "";
+InetAddress inetAddress = InetAddress.getLocalHost();
+ip = inetAddress.getHostAddress();
+out.println("Server Host Name :: "+inetAddress.getHostName());%><br>
+<%out.println("Server IP Address :: "+ip);%>
 	<table border="0" width="30%" cellpadding="3">
 	<thead> <tr> <th colspan="2">Login Page</th> </tr> </thead> 
 	<tbody> 
