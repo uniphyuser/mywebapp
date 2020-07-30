@@ -8,13 +8,6 @@
 
 <form method="post" action="login.jsp"> 
 <center> 
-	<h3> Server Side IP Address </h3><br>
-<%@page import="java.net.InetAddress;" %>
-<%String ip = "";
-InetAddress inetAddress = InetAddress.getLocalHost();
-ip = inetAddress.getHostAddress();
-out.println("Server Host Name :: "+inetAddress.getHostName());%><br>
-<%out.println("Server IP Address :: "+ip);%>
 	<table border="0" width="30%" cellpadding="3">
 	<thead> <tr> <th colspan="2">Login Page</th> </tr> </thead> 
 	<tbody> 
