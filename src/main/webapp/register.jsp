@@ -6,6 +6,7 @@
  <body bgcolor="#aaaaaa"> 
  <form method="post" action="userRegistration.jsp"> 
 	<center> 
+		<h3>Session ID: <% out.print( session.getId()); %></h3>
 		<table border="1" width="30%" cellpadding="5"> 
 		<thead> <tr> <th colspan="2">Enter Information Here</th> </tr> </thead> 
 		<tbody> <tr> <td>First Name</td> <td><input type="text" name="firstName" value="" /></td> 
