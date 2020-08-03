@@ -8,6 +8,7 @@
 
 <form method="post" action="login.jsp"> 
 <center> 
+	<h3>Session ID: <% out.print( session.getId()); %></h3>
 	<table border="0" width="30%" cellpadding="3">
 	<thead> <tr> <th colspan="2">Login Page</th> </tr> </thead> 
 	<tbody> 
